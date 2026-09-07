@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  /* =========================
+     BRAND COLORS
+  ========================= */
+
+  --color-alpine-oat: #f4e5cb;
+  --color-butter-yellow: #fee997;
+
+  --color-cherry-red: #74070e;
+
+  --color-aura-indigo: #b0a5df;
+  --color-deep-violet: #37076d;
+  --color-dill-green: #686f1f;
+
+  /* =========================
+     TEXT
+  ========================= */
+
+  --color-text-primary: #37076d;
+  --color-text-heading: #74070e;
+  --color-text-secondary: #686f1f;
+
+  /* =========================
+     BACKGROUND
+  ========================= */
+
+  --color-bg-primary: #f4e5cb;
+  --color-bg-secondary: #fee997;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+
+  font-family: "Montserrat", sans-serif;
+}
