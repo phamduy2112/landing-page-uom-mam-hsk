@@ -58,7 +58,7 @@ export default function OnlineLearningSection() {
         "
       /> */}
 
-      <div
+      {/* <div
         className="
           pointer-events-none
           absolute
@@ -69,7 +69,7 @@ export default function OnlineLearningSection() {
           rounded-full
           bg-[#B0A5DF]/20
         "
-      />
+      /> */}
 
       <div
         className="
