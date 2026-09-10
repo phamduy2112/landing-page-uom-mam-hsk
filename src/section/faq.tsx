@@ -100,7 +100,7 @@ export default function FAQSection() {
         className="
           mx-auto
           grid
-          max-w-[1280px]
+          max-w-[800px]
           grid-cols-1
           gap-10
           px-5
@@ -109,203 +109,12 @@ export default function FAQSection() {
           md:px-8
           md:py-16
 
-          lg:grid-cols-[464px_minmax(0,1fr)]
           lg:gap-[56px]
           lg:px-5
           lg:py-[56px]
         "
       >
-        {/* LEFT */}
-        <div className="flex flex-col justify-center hidden sm:block">
-          {/* Badge */}
-          <div
-            className="
-              mb-6
-              flex
-              w-fit
-              items-center
-              gap-3
-              rounded-full
-              bg-[#FEE997]
-              px-4
-              py-[10px]
-            "
-          >
-            <div
-              className="
-                flex
-                h-7
-                w-7
-                items-center
-                justify-center
-                rounded-full
-                bg-[#37076D]
-                text-[15px]
-                font-bold
-                text-white
-              "
-            >
-              ?
-            </div>
-
-            <span className="text-[14px] font-semibold text-[#37076D]">
-              Giải Đáp Cùng Ươm Mầm HSK
-            </span>
-          </div>
-
-          {/* Title */}
-          <h2
-            className="
-              text-[21px]
-             font-bold
-              leading-[1.22]
-              tracking-[-0.5px]
-              text-[#37076D]
-
-              lg:text-[33px]
-            "
-          >
-            Bắt Đầu Học Tiếng Trung,
-            <br />
-            <span className="text-[#74070E]">
-              Bạn Đang Quan Tâm Điều Gì?
-            </span>
-          </h2>
-
-          {/* Description */}
-          <p
-            className="
-              mt-3
-              max-w-[460px]
-              text-[15px]
-              leading-[1.7]
-              text-[#574A5F]
-            "
-          >
-            Những câu hỏi thường gặp dành cho người đang tìm hiểu tiếng Trung,
-            HSK và muốn lựa chọn một lộ trình học phù hợp với mục tiêu của mình.
-          </p>
-
-          {/* Mini Cards */}
-          <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {/* Card 1 */}
-            <div
-              className="
-                rounded-[18px]
-                bg-[#FFF9EF]
-                px-4
-                py-4
-                shadow-[0_4px_14px_rgba(55,7,109,0.06)]
-              "
-            >
-              <div
-                className="
-                  mb-4
-                  flex
-                  h-[45px]
-                  w-[45px]
-                  items-center
-                  justify-center
-                  rounded-[12px]
-                  bg-[#E8E2F7]
-                  text-[#37076D]
-                "
-              >
-                <BookIcon />
-              </div>
-
-              <h3 className="text-[15px] font-bold text-[#37076D]">
-                HSK & GIAO TIẾP
-              </h3>
-
-              <p className="mt-2 text-[14px] text-[#6B5F70]">
-                Học để sử dụng được
-              </p>
-            </div>
-
-            {/* Card 2 */}
-            <div
-              className="
-                rounded-[18px]
-                bg-[#FFF9EF]
-                px-4
-                py-4
-                shadow-[0_4px_14px_rgba(55,7,109,0.06)]
-              "
-            >
-              <div
-                className="
-                  mb-4
-                  flex
-                  h-[45px]
-                  w-[45px]
-                  items-center
-                  justify-center
-                  rounded-[12px]
-                  bg-[#EEF0D8]
-                  text-[#686F1F]
-                "
-              >
-                <LeafIcon />
-              </div>
-
-              <h3 className="text-[15px] font-bold text-[#37076D]">
-                LỘ TRÌNH RÕ RÀNG
-              </h3>
-
-              <p className="mt-2 text-[14px] text-[#6B5F70]">
-                Từ nền tảng đến mục tiêu
-              </p>
-            </div>
-          </div>
-
-          {/* CTA Box */}
-          <div
-            className="
-              mt-5
-              rounded-[18px]
-              border
-              border-[#E4D3B8]
-              bg-[#FFF9EF]
-              px-5
-              py-5
-              shadow-[0_10px_28px_rgba(55,7,109,0.08)]
-            "
-          >
-            <h3 className="text-[16px] font-bold text-[#37076D]">
-              Chưa Biết Nên Bắt Đầu Từ Đâu?
-            </h3>
-
-            <p className="mt-2 text-[14px] leading-[1.7] text-[#574A5F]">
-              Chia sẻ trình độ hiện tại và mục tiêu của bạn. Ươm Mầm HSK sẽ giúp
-              bạn xác định lộ trình phù hợp để học đúng ngay từ đầu.
-            </p>
-
-            <a
-              href="#dang-ky"
-              className="
-                mt-4
-                inline-flex
-                items-center
-                gap-2
-                rounded-[12px]
-                bg-[#37076D]
-                px-5
-                py-[13px]
-                text-[13px]
-                font-bold
-                uppercase
-                text-white
-                transition-all
-                duration-300
-                hover:-translate-y-[2px]
-                hover:bg-[#4B0A88]
-              "
-            >
-              NHẬN TƯ VẤN LỘ TRÌNH
-            </a>
-          </div>
-        </div>
+      
 
         {/* RIGHT */}
         <div
@@ -315,7 +124,7 @@ export default function FAQSection() {
             px-5
             py-6
             shadow-[0_20px_55px_rgba(55,7,109,0.08)]
-
+          w-full
             md:px-6
             md:py-7
           "
