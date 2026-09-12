@@ -125,7 +125,7 @@ export default function Reviewss() {
                   snap-start
                   overflow-hidden
                   rounded-[24px]
-                  w-[85%]
+                  w-[100%]
                   sm:w-[65%]
                   md:w-[calc(50%-10px)]
                   lg:w-[calc(33.333%-14px)]
@@ -135,7 +135,8 @@ export default function Reviewss() {
                   src={src}
                   alt={`Học viên Ươm Mầm HSK ${index + 1}`}
                   className="
-                    h-[400px]
+                  h-[450px]
+                    sm:h-[400px]
                     w-full
                     aspect-auto
                     object-fill

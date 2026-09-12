@@ -1,5 +1,5 @@
-import image1 from "../assets/0.png";
-import image2 from "../assets/9.png";
+import image1 from "../assets/BÀI LANDINGPAGE UOMMAM HSK 1_upscayl_5x_upscayl-standard-4x.png";
+import image2 from "../assets/BÀI LANDINGPAGE UOMMAM HSK 2_upscayl_5x_upscayl-standard-4x.png";
 
 export default function Hero() {
   return (

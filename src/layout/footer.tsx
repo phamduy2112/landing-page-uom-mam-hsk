@@ -5,6 +5,7 @@ const brandInfo = {
   company: "TIẾNG TRUNG ƯƠM MẦM HSK",
   phone: "0123 456 789",
   phoneLink: "0123456789",
+  zaloLink: "https://zalo.me/0123456789",
   email: "hello@uommanhhsk.vn",
 };
 
@@ -94,6 +95,33 @@ const TikTokIcon = () => (
     className="h-[19px] w-[19px]"
   >
     <path d="M15.5 3c.4 2.2 1.7 3.6 4 4v3.1c-1.5 0-2.8-.4-4-1.2v6.2a6 6 0 1 1-5.2-6v3.2a2.8 2.8 0 1 0 2 2.7V3h3.2Z" />
+  </svg>
+);
+
+const ZaloIcon = () => (
+  <svg
+    viewBox="0 0 32 32"
+    fill="none"
+    className="h-[23px] w-[23px]"
+    aria-hidden="true"
+  >
+    <path
+      d="M7.2 5.5h17.6A3.7 3.7 0 0 1 28.5 9.2v11.6a3.7 3.7 0 0 1-3.7 3.7H14.2l-5.9 3.8.9-3.8h-2A3.7 3.7 0 0 1 3.5 20.8V9.2a3.7 3.7 0 0 1 3.7-3.7Z"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinejoin="round"
+    />
+    <text
+      x="16"
+      y="18.7"
+      fill="currentColor"
+      fontSize="8.2"
+      fontWeight="800"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+    >
+      Zalo
+    </text>
   </svg>
 );
 
@@ -406,29 +434,13 @@ export default function Footer() {
           </p>
 
           <div className="flex items-center gap-[10px]">
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="
-                flex
-                h-[40px]
-                w-[40px]
-                items-center
-                justify-center
-                rounded-full
-                bg-[#FEE997]
-                text-[#37076D]
-                transition-all
-                hover:-translate-y-1
-                hover:bg-white
-              "
-            >
-              <FacebookIcon />
-            </a>
+   
 
             <a
-              href="#"
-              aria-label="TikTok"
+              href={brandInfo.zaloLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Zalo"
               className="
                 flex
                 h-[40px]
@@ -443,27 +455,7 @@ export default function Footer() {
                 hover:bg-white
               "
             >
-              <TikTokIcon />
-            </a>
-
-            <a
-              href="#"
-              aria-label="Youtube"
-              className="
-                flex
-                h-[40px]
-                w-[40px]
-                items-center
-                justify-center
-                rounded-full
-                bg-[#FEE997]
-                text-[#37076D]
-                transition-all
-                hover:-translate-y-1
-                hover:bg-white
-              "
-            >
-              <YoutubeIcon />
+              <ZaloIcon />
             </a>
           </div>
         </div>

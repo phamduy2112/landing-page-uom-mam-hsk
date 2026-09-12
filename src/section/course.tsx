@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "../assets/1.png";
+import image1 from "../assets/BÀI-LANDINGPAGE-UOMMAM-HSK-3_upscayl_5x_upscayl-standard-4x.png";
 import image2 from "../assets/12.png";
 import image3 from "../assets/3.png";
 const courses = [
@@ -408,9 +408,9 @@ export default function CoursesSection() {
             lg:text-[40px]
               "
             >
-              3 Lớp – Từ Zero
+              3 Lớp – Từ 0
               <br />
-              Đến HSK{" "}
+              Đến Lưu Loát{" "}
               <span className="text-[#686F1F]">
               
               </span>

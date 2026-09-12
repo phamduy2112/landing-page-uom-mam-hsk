@@ -6,34 +6,34 @@ import React, { useRef, useState } from "react";
 
 const items = [
   {
-    title: "Học Nhiều Nhưng Vẫn Mau Quên?",
-    desc: "Từ vựng học hôm nay nhưng vài ngày sau lại quên vì chưa có cách ghi nhớ và ôn tập theo hệ thống.",
-    icon: "clipboard",
-  },
-  {
-    title: "Chưa Biết Mình Đang Ở Trình Độ Nào?",
-    desc: "Không rõ nền tảng hiện tại và chưa biết nên bắt đầu từ HSK nào để tránh học quá sức hoặc học lại kiến thức đã biết.",
-    icon: "level",
-  },
-  {
-    title: "Muốn Tiến Bộ Nhanh Nhưng Không Biết Học Gì Trước?",
-    desc: "Phát âm, từ vựng, ngữ pháp và chữ Hán đều cần học nhưng nếu không đúng thứ tự rất dễ bị rối.",
-    icon: "deadline",
-  },
-  {
-    title: "Nghe Hiểu Nhưng Khó Mở Miệng Nói?",
-    desc: "Biết từ và cấu trúc nhưng phản xạ chậm, ngại phát âm sai và chưa quen sử dụng tiếng Trung trong tình huống thực tế.",
-    icon: "book",
-  },
-  {
-    title: "Lộ Trình Hiện Tại Chưa Phù Hợp?",
-    desc: "Học theo tài liệu hoặc lớp không phù hợp với trình độ khiến kiến thức thiếu kết nối và mất nhiều thời gian hơn cần thiết.",
+    title: "Lộ Trình Rõ Từ Nền Tảng",
+    desc: "Học đúng thứ tự từ Pinyin, phát âm đến từ vựng, ngữ pháp và phản xạ.",
     icon: "route",
   },
   {
-    title: "Dễ Mất Động Lực Giữa Chừng?",
-    desc: "Không nhìn thấy sự tiến bộ rõ ràng, học một mình và thiếu người theo sát khiến hành trình chinh phục tiếng Trung dễ bị gián đoạn.",
+    title: "Giáo Viên Sửa Lỗi Trực Tiếp",
+    desc: "Không chỉ chỉ ra lỗi mà còn theo sát để học viên sửa đúng.",
+    icon: "level",
+  },
+  {
+    title: "APP Đồng Hành Giữa Hai Buổi",
+    desc: "Ôn bài, luyện phát âm, Pinyin, chữ Hán và theo dõi tiến độ.",
+    icon: "clipboard",
+  },
+  {
+    title: "Mục Tiêu Từng Chặng Rõ Ràng",
+    desc: "Biết mình đang ở đâu và cần đạt gì ở bước tiếp theo.",
+    icon: "deadline",
+  },
+  {
+    title: "Video Xem Lại & Học Liệu Hỗ Trợ",
+    desc: "Tiếp tục ôn luyện sau buổi học, hạn chế đứt nhịp giữa các buổi.",
     icon: "book",
+  },
+  {
+    title: "Học Theo Đúng Mục Tiêu Của Bạn",
+    desc: "Xác định học để thi HSK, du học, đi làm hay giao tiếp trước khi tư vấn lộ trình phù hợp.",
+    icon: "target",
   },
 ];
 
@@ -279,6 +279,48 @@ const RouteIcon = () => (
   </svg>
 );
 
+const TargetIcon = () => (
+  <svg
+    viewBox="0 0 80 80"
+    fill="none"
+    className="
+      h-[64px]
+      w-[64px]
+      md:h-[72px]
+      md:w-[72px]
+    "
+  >
+    <circle cx="30" cy="46" r="21" fill="#B0A5DF" />
+
+    <circle
+      cx="40"
+      cy="40"
+      r="24"
+      fill="#FFF9EF"
+      stroke="#37076D"
+      strokeWidth="2.5"
+    />
+
+    <circle
+      cx="40"
+      cy="40"
+      r="15"
+      stroke="#686F1F"
+      strokeWidth="2.5"
+    />
+
+    <circle cx="40" cy="40" r="5" fill="#FEE997" stroke="#37076D" strokeWidth="2.5" />
+
+    <path
+      d="M43 37 61 19M52 19h9v9"
+      stroke="#74070E"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 const ArrowIcon = () => (
   <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4">
     <path
@@ -320,6 +362,7 @@ const Icon = ({ type }: { type: string }) => {
   if (type === "level") return <LevelIcon />;
   if (type === "deadline") return <DeadlineIcon />;
   if (type === "route") return <RouteIcon />;
+  if (type === "target") return <TargetIcon />;
 
   return <BookIcon />;
 };
@@ -617,45 +660,36 @@ export default function WhySection() {
             SECTION TITLE
         ================================================= */}
 
-        <h2
-          className="
-            mx-auto
+       <h2
+  className="
+    mx-auto
+    mb-6
+    max-w-[370px]
+    px-5
+    text-center
+    text-[26px]
+    font-bold
+    leading-[1.25]
+    tracking-[-0.6px]
+    text-[#37076D]
 
-            mb-6
-            max-w-[370px]
-            px-5
+    sm:max-w-[520px]
+    sm:text-[28px]
 
-            text-center
-            text-[26px]
-            font-bold
-            leading-[1.25]
-            tracking-[-0.6px]
-            text-[#37076D]
+    md:mb-10
+    md:max-w-none
+    md:px-0
+    md:text-[32px]
+    md:leading-[1.3]
 
-            sm:max-w-[520px]
-            sm:text-[28px]
-
-            md:mb-10
-            md:max-w-none
-            md:px-0
-            md:text-[32px]
-            md:leading-[1.3]
-
-            lg:text-[40px]
-          "
-        >
-          Bạn Muốn Học Tiếng Trung
-          <span className="text-[#74070E]">
-            {" "}
-            Hiệu Quả Hơn
-          </span>
-
-          <span className="hidden sm:block" />
-
-          {" "}
-          Nhưng Vẫn Đang Mắc Kẹt Ở Đây?
-        </h2>
-
+    lg:text-[40px]
+  "
+>
+  Vì Sao Học Viên Chọn{" "}
+  <span className="text-[#74070E]">
+    Ươm Mầm HSK?
+  </span>
+</h2>
         {/* =================================================
             MOBILE
             < 768PX

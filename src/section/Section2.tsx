@@ -195,38 +195,45 @@ export default function GuaranteeSection() {
 
             {/* TITLE */}
 
-            <div className="mt-6">
-              <h2 className="
-              text-[26px] text-center
-              sm:text-left
+        <div className="mt-6">
+  <h2
+    className="
+     
+                mt-3
+                  text-[26px]
+               font-bold
+               text-center
+                leading-[1.3]
+                tracking-[-0.8px]
+                text-[#37076D]
+            sm:text-left
 
-            
-            font-bold leading-[1.07] tracking-[-1.5px] text-[#37076D] md:text-[54px]">
-                Hoàn 100%
-                
+                   md:text-[32px]
 
-                <span className="ml-2 relative inline-block">
-                  <span className="relative z-10 text-[#37076D]">
-                    Học Phí
-                  </span>
+            lg:text-[40px]
+              
+    "
+  >
+    HỌC CÓ LỘ TRÌNH
+    <br />
 
-                  <span className="absolute bottom-[3px] left-0 -z-0 h-[14px] w-full rounded-full bg-[#FEE997]" />
-                </span>
-              </h2>
+    <span className="relative inline-block">
+      <span className="relative z-10 text-[#37076D]">
+        CÓ CAM KẾT
+      </span>
 
-              <p className="mt-2             sm:text-left
- sm:mt-4 text-[18px] text-center font-semibold leading-[1.3] sm:leading-[1.4] text-[#4A3558] md:text-[23px]">
-                Nếu kết quả cuối khóa không đạt theo cam kết
-              </p>
-            </div>
+      <span className="absolute bottom-[3px] left-0 -z-0 h-[14px] w-full rounded-full bg-[#FEE997]" />
+    </span>
+  </h2>
+</div>
 
             {/* DESCRIPTION */}
 
             <p className="mt-2             sm:text-left
  sm:mt-3 text-[15px] text-center leading-[1.3] sm:leading-[1.5] text-[#6C6270]">
-              Ươm Mầm HSK xây dựng lộ trình học rõ ràng, theo sát tiến độ và
-              đồng hành cùng học viên trong suốt quá trình học để hướng đến đầu
-              ra đã đặt ra từ đầu.
+             Ươm Mầm HSK có chính sách cam kết hoàn 100% học phí theo
+  điều kiện áp dụng của chương trình, giúp học viên yên tâm hơn
+  khi bắt đầu lộ trình.
             </p>
 
             {/* GUARANTEE ITEMS */}
@@ -239,11 +246,12 @@ export default function GuaranteeSection() {
 
                 <div>
                   <p className="font-semibold leading-[1.5] text-[#37076D]">
-                    Hoàn học phí trong 7 ngày đầu
+                  Cam kết hoàn học Phí 100%
                   </p>
 
                   <p className="mt-1 text-[14px] leading-[1.55] text-[#756B78]">
-                    Áp dụng khi học viên nhận thấy chương trình không phù hợp.
+                    Áp dụng theo chính sách lớp học
+
                   </p>
                 </div>
               </div>
@@ -259,7 +267,7 @@ export default function GuaranteeSection() {
                   </p>
 
                   <p className="mt-1 text-[14px] leading-[1.55] text-[#756B78]">
-                    Đồng hành theo lộ trình và tiêu chí đầu ra của chương trình.
+                    Cuối khóa không đạt kết quả như cam kết 100% (dựa trên kết quả đề thi thật)
                   </p>
                 </div>
               </div>

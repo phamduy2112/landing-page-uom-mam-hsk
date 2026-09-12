@@ -2,34 +2,34 @@ import React, { useState } from "react";
 
 const faqData = [
   {
-    question: "Ươm Mầm HSK Có Những Lớp Học Nào?",
+    question: "Chưa biết tiếng Trung có học được không?",
     answer:
-      "Ươm Mầm HSK xây dựng các lớp tiếng Trung theo từng trình độ, từ người mới bắt đầu đến các chặng luyện HSK, giúp học viên lựa chọn lộ trình phù hợp với nền tảng và mục tiêu của mình.",
+      "Có. Lộ trình có thể bắt đầu từ 0, ưu tiên xây Pinyin và phát âm trước khi tăng dần từ vựng, ngữ pháp.",
   },
   {
-    question: "Chưa Biết Gì Về Tiếng Trung Có Học Được Không?",
+    question: "Học online có được sửa phát âm kỹ không?",
     answer:
-      "Có. Người mới bắt đầu có thể học từ những nền tảng đầu tiên như phát âm, Pinyin, từ vựng và cấu trúc câu trước khi từng bước nâng cao khả năng sử dụng tiếng Trung.",
+      "Có. Giáo viên trực tiếp nghe, phát hiện lỗi và hướng dẫn học viên sửa trong quá trình học.",
   },
   {
-    question: "Làm Sao Biết Mình Nên Bắt Đầu Từ Trình Độ Nào?",
+    question: "APP Ươm Mầm có thay giáo viên không?",
     answer:
-      "Ươm Mầm HSK sẽ dựa trên nền tảng hiện tại, mục tiêu học và thời gian bạn có thể dành cho tiếng Trung để tư vấn lộ trình phù hợp.",
+      "Không. APP hỗ trợ ôn luyện giữa hai buổi; giáo viên vẫn là người hướng dẫn, giải thích và sửa lỗi trực tiếp.",
   },
   {
-    question: "Lộ Trình Học HSK Được Xây Dựng Như Thế Nào?",
+    question: "Mất bao lâu để đạt HSK3 hoặc HSK4?",
     answer:
-      "Lộ trình được chia thành từng chặng rõ ràng, giúp học viên xây chắc phát âm, từ vựng, ngữ pháp và khả năng sử dụng tiếng Trung trước khi tiến đến mục tiêu HSK cao hơn.",
+      "Tùy trình độ đầu vào, mục tiêu và tiến độ học. Học viên sẽ được tư vấn lộ trình phù hợp trước khi chọn khóa.",
   },
   {
-    question: "Học HSK Có Giúp Giao Tiếp Tiếng Trung Không?",
+    question: "Có chính sách hoàn học phí không?",
     answer:
-      "Mục tiêu không chỉ là ghi nhớ kiến thức để làm bài thi. Học viên được định hướng xây nền từ vựng, ngữ pháp và cách sử dụng tiếng Trung để có thể vận dụng vào giao tiếp và những tình huống thực tế.",
+      "Có chính sách cam kết hoàn 100% học phí theo điều kiện áp dụng của chương trình/lớp học.",
   },
   {
-    question: "Làm Thế Nào Để Được Tư Vấn Lộ Trình?",
+    question: "Sau buổi học có nội dung để xem lại và ôn thêm không?",
     answer:
-      "Bạn có thể để lại thông tin hoặc inbox Ươm Mầm HSK. Đội ngũ sẽ trao đổi về trình độ hiện tại và mục tiêu để gợi ý lớp học phù hợp.",
+      "Có. Hệ thống đào tạo của Ươm Mầm có video xem lại, học liệu và APP hỗ trợ để học viên tiếp tục củng cố nội dung sau buổi học.",
   },
 ];
 
@@ -39,37 +39,14 @@ const QuestionMarkIcon = () => (
     fill="none"
     stroke="currentColor"
     strokeWidth="2"
-    className="h-5 w-5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-[19px] w-[19px]"
+    aria-hidden="true"
   >
     <circle cx="12" cy="12" r="9" />
     <path d="M9.8 9a2.4 2.4 0 1 1 4.2 1.6c-.9.8-2 1.3-2 2.8" />
     <path d="M12 17h.01" />
-  </svg>
-);
-
-const BookIcon = () => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    className="h-5 w-5"
-  >
-    <rect x="4" y="4" width="16" height="16" rx="2" />
-    <path d="M8 8h8M8 12h8M8 16h5" />
-  </svg>
-);
-
-const LeafIcon = () => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    className="h-5 w-5"
-  >
-    <path d="M5 19c7 0 13-5 14-14-9 1-14 7-14 14Z" />
-    <path d="M5 19c3-4 6-7 11-10" />
   </svg>
 );
 
@@ -79,140 +56,193 @@ const ChevronIcon = ({ open }: { open: boolean }) => (
     fill="none"
     stroke="currentColor"
     strokeWidth="2.3"
-    className={`h-4 w-4 transition-transform duration-300 ${
-      open ? "rotate-180" : ""
-    }`}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={`
+      h-[15px] w-[15px]
+      transition-transform duration-300
+      ${open ? "rotate-180" : ""}
+    `}
+    aria-hidden="true"
   >
     <path d="m6 9 6 6 6-6" />
   </svg>
 );
 
 export default function FAQSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const toggleFAQ = (index: number) => {
-    setActiveIndex(activeIndex === index ? -1 : index);
+    setActiveIndex((current) => (current === index ? -1 : index));
   };
 
   return (
-    <section className="w-full bg-[#F4E5CB]" id="cau-hoi">
+    <section
+      id="cau-hoi"
+      className="w-full bg-[#F4E5CB]"
+    >
       <div
         className="
           mx-auto
-          grid
+          w-full
           max-w-[800px]
-          grid-cols-1
-          gap-10
-          px-5
-          py-12
+          px-4
+          py-8
 
-          md:px-8
-          md:py-16
+          sm:px-5
+          sm:py-10
 
-          lg:gap-[56px]
-          lg:px-5
-          lg:py-[56px]
+          md:px-6
+          md:py-12
         "
       >
-      
-
-        {/* RIGHT */}
         <div
           className="
-            rounded-[28px]
+            w-full
+            rounded-[24px]
             bg-[#FFF9EF]
-            px-5
-            py-6
-            shadow-[0_20px_55px_rgba(55,7,109,0.08)]
-          w-full
-            md:px-6
-            md:py-7
+            p-4
+
+            shadow-[0_16px_45px_rgba(55,7,109,0.06)]
+
+            sm:p-5
+            md:rounded-[28px]
+            md:p-6
           "
         >
-          {/* Heading */}
-          <div className="mb-5 flex items-start justify-between gap-5 px-1">
+          {/* HEADER */}
+          <div
+            className="
+              mb-5
+              flex
+              items-center
+              justify-between
+              gap-4
+
+              sm:mb-6
+            "
+          >
             <div>
               <p
                 className="
                   mb-1
-                  text-[14px]
+                  text-[12px]
                   font-bold
                   uppercase
-                  tracking-[0.18em]
+                  tracking-[0.2em]
                   text-[#686F1F]
+
+                  sm:text-[13px]
                 "
               >
                 FAQ
               </p>
 
-              <h3 className="text-[20px] sm:text-[25px] font-bold leading-tight text-[#37076D]">
-                Câu Hỏi Thường Gặp
-              </h3>
+              <h2
+                className="
+                  text-[21px]
+                  font-bold
+                  leading-[1.25]
+                  text-[#37076D]
+
+                  sm:text-[24px]
+                  md:text-[26px]
+                "
+              >
+                Câu hỏi thường gặp
+              </h2>
             </div>
 
             <div
               className="
-               hidden sm:flex
-                h-[48px]
-                w-[48px]
+                hidden
+                h-[44px]
+                w-[44px]
                 shrink-0
                 items-center
                 justify-center
-                rounded-[15px]
+                rounded-[14px]
                 bg-[#FEE997]
                 text-[#74070E]
+
+                sm:flex
               "
             >
               <QuestionMarkIcon />
             </div>
           </div>
 
-          {/* FAQ */}
-          <div className="space-y-3">
+          {/* FAQ LIST */}
+          <div className="space-y-2.5">
             {faqData.map((item, index) => {
               const open = activeIndex === index;
 
+              const questionId = `faq-question-${index}`;
+              const answerId = `faq-answer-${index}`;
+
               return (
                 <div
-                  key={index}
+                  key={item.question}
                   className={`
                     overflow-hidden
-                    rounded-[16px]
+                    rounded-[15px]
                     border
                     transition-all
                     duration-300
+
                     ${
                       open
-                        ? "border-[#B0A5DF] bg-[#F7F3FC]"
-                        : "border-[#E7DCCB] bg-white"
+                        ? "border-[#B0A5DF] bg-[#FAF7FF]"
+                        : "border-[#E8DDCF] bg-white hover:border-[#D3C8B8]"
                     }
                   `}
                 >
+                  {/* QUESTION */}
                   <button
+                    id={questionId}
                     type="button"
+                    aria-expanded={open}
+                    aria-controls={answerId}
                     onClick={() => toggleFAQ(index)}
                     className="
                       flex
+                      min-h-[62px]
                       w-full
                       items-center
-                      gap-4
-                      px-5
-                      py-4
+                      gap-3
+                      px-3.5
+                      py-3
                       text-left
+                      outline-none
+
+                      focus-visible:ring-2
+                      focus-visible:ring-inset
+                      focus-visible:ring-[#B0A5DF]
+
+                      sm:min-h-[66px]
+                      sm:gap-4
+                      sm:px-4
                     "
                   >
-                    {/* Number */}
+                    {/* NUMBER */}
                     <span
                       className={`
                         flex
-                        h-[37px]
-                        w-[37px]
+                        h-[36px]
+                        w-[36px]
                         shrink-0
                         items-center
                         justify-center
-                        rounded-[11px]
-                        text-[14px]
+                        rounded-[10px]
+                        text-[12px]
                         font-bold
+                        transition-colors
+                        duration-300
+
+                        sm:h-[38px]
+                        sm:w-[38px]
+                        sm:text-[13px]
+
                         ${
                           open
                             ? "bg-[#37076D] text-white"
@@ -223,32 +253,39 @@ export default function FAQSection() {
                       {String(index + 1).padStart(2, "0")}
                     </span>
 
-                    {/* Question */}
+                    {/* TITLE */}
                     <span
                       className="
+                        min-w-0
                         flex-1
-                        text-[14px]
-                        font-bold
+                        text-[13.5px]
+                        font-semibold
                         leading-[1.45]
                         text-[#37076D]
 
+                        sm:text-[15px]
                         md:text-[16px]
                       "
                     >
                       {item.question}
                     </span>
 
-                    {/* Arrow */}
+                    {/* CHEVRON */}
                     <span
                       className={`
                         flex
-                        h-[34px]
-                        w-[34px]
+                        h-[32px]
+                        w-[32px]
                         shrink-0
                         items-center
                         justify-center
                         rounded-full
-                        transition-colors
+                        transition-all
+                        duration-300
+
+                        sm:h-[34px]
+                        sm:w-[34px]
+
                         ${
                           open
                             ? "bg-[#686F1F] text-white"
@@ -260,13 +297,17 @@ export default function FAQSection() {
                     </span>
                   </button>
 
-                  {/* Answer */}
+                  {/* ANSWER */}
                   <div
+                    id={answerId}
+                    role="region"
+                    aria-labelledby={questionId}
                     className={`
                       grid
                       transition-all
                       duration-300
                       ease-in-out
+
                       ${
                         open
                           ? "grid-rows-[1fr] opacity-100"
@@ -277,20 +318,26 @@ export default function FAQSection() {
                     <div className="overflow-hidden">
                       <div
                         className="
-                          sm:ml-[53px]
+                          mx-3.5
                           border-t
-                          border-[#DDD5EA]
-                          px-5
-                          py-4
+                          border-[#E2DAEB]
+                          pb-4
+                          pt-3.5
+
+                          sm:ml-[58px]
+                          sm:mr-4
+                          sm:pb-4
+                          sm:pt-4
                         "
                       >
                         <p
                           className="
                             text-[13px]
                             leading-[1.7]
-                            text-[#5D5263]
+                            text-[#625768]
 
-                            md:text-[15px]
+                            sm:text-[14px]
+                            md:text-[14.5px]
                           "
                         >
                           {item.answer}
