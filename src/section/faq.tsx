@@ -77,8 +77,8 @@ export default function FAQSection() {
             lg:text-[40px]">
             CÂU HỎI <span className="text-[#74070E]">THƯỜNG GẶP</span> 
           </h2>
-          <p className="mt-2.5 text-[13.5px] font-medium text-[#625768] sm:text-[15px] md:text-[16px]">
-            Giải đáp thắc mắc • Lộ trình rõ ràng • Cam kết đầu ra
+          <p className="mt-2 text-[13.5px] font-medium text-[#625768] sm:text-[15px] md:text-[16px]">
+            Giải đáp thắc mắc - Lộ trình rõ ràng - Cam kết đầu ra
           </p>
         </div>
 
