@@ -135,7 +135,7 @@ export default function Reviewss() {
                   src={src}
                   alt={`Học viên Ươm Mầm HSK ${index + 1}`}
                   className="
-                  h-[450px]
+                  h-full
                     sm:h-[400px]
                     w-full
                     aspect-auto
