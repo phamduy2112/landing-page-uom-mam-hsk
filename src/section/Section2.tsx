@@ -1,5 +1,5 @@
 import React from "react";
-import image3 from "../assets/20.png";
+import image3 from "../assets/THẺ 3 - HSK.png";
 
 /* =========================================================
    ICONS
@@ -214,12 +214,12 @@ export default function GuaranteeSection() {
               
     "
   >
-    HỌC CÓ LỘ TRÌNH
+    Học Có Lộ Trình
     <br />
 
     <span className="relative inline-block">
-      <span className="relative z-10 text-[#37076D]">
-        CÓ CAM KẾT
+      <span className="relative z-10  text-[#74070E]">
+        Có Cam Kết
       </span>
 
       <span className="absolute bottom-[3px] left-0 -z-0 h-[14px] w-full rounded-full bg-[#FEE997]" />
@@ -308,11 +308,11 @@ export default function GuaranteeSection() {
 
             {/* <div className="absolute -bottom-5 -left-5 h-32 w-32 rounded-full bg-[#B0A5DF]/35" /> */}
 
-            <div className="relative overflow-hidden rounded-[28px] border border-[#F4E5CB] bg-[#F4E5CB] lg:min-h-[610px]">
+            <div className="relative overflow-hidden rounded-[28px] border border-[#F4E5CB] bg-[#F4E5CB] ">
               <img
                 src={image3}
                 alt="Học viên Ươm Mầm HSK"
-                className="h-full w-full object-cover md:h-[520px] lg:h-[610px]"
+                className="h-full w-full "
               />
 
               {/* IMAGE OVERLAY */}

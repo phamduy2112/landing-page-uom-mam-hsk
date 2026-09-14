@@ -506,7 +506,7 @@ const Card = ({ item, mobile = false }: CardProps) => {
               : `
                 mt-3
                 max-w-[350px]
-                text-[14px]
+                text-[15px]
                 leading-[1.65]
               `
           }

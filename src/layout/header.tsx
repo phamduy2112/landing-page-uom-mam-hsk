@@ -13,13 +13,13 @@ const navItems = [
     label: "KHÓA HỌC",
     href: "#khoa-hoc",
   },
-  {
-    label: "THÀNH TÍCH HỌC VIÊN",
-    href: "#thanh-tich",
-  },
-  {
+    {
     label: "HỆ THỐNG HỌC",
     href: "#he-thong-hoc",
+  },
+  {
+    label: "FEEDBACK HỌC VIÊN",
+    href: "#feedback",
   },
   {
     label: "CÂU HỎI THƯỜNG GẶP",

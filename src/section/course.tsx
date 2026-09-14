@@ -1,12 +1,12 @@
 import React from "react";
-import image1 from "../assets/BÀI-LANDINGPAGE-UOMMAM-HSK-3_upscayl_5x_upscayl-standard-4x.png";
-import image2 from "../assets/12.png";
-import image3 from "../assets/3.png";
+import image1 from "../assets/BÀI LANDINGPAGE UOMMAM HSK 3.2_upscayl_5x_upscayl-standard-4x.png";
+import image2 from "../assets/BÀI LANDINGPAGE UOMMAM HSK 4_upscayl_5x_upscayl-standard-4x.png";
+import image3 from "../assets/BÀI-LANDINGPAGE-UOMMAM-HSK-5.1_upscayl_5x_upscayl-standard-4x.png";
 const courses = [
   {
     id: "tu-so-0",
     level: "NHẬP MÔN",
-    name: "Từ Số 0",
+    name: "Ươm Mầm từ 0 đến HSK2",
     color: "#686F1F",
     border: "#DCE5CA",
     softBg: "#F5F7E9",
@@ -31,7 +31,7 @@ const courses = [
   {
     id: "hsk-3",
     level: "TRUNG CẤP",
-    name: "Lớp HSK 3",
+    name: "Đâm Chồi HSK3",
     color: "#37076D",
     border: "#D8D0E8",
     softBg: "#F6F3FA",
@@ -167,7 +167,7 @@ function CourseCard({
         />
 
         {/* LEVEL BADGE */}
-        <div
+        {/* <div
           style={{
             backgroundColor: course.badgeBg,
             color: course.color,
@@ -188,7 +188,7 @@ function CourseCard({
           "
         >
           {course.level}
-        </div>
+        </div> */}
       </div>
 
       {/* CONTENT */}
@@ -284,7 +284,7 @@ function CourseCard({
 
           {/* CTA */}
           <a
-            href={`#${course.id}`}
+            href={`#dang-ky`}
             style={{
               backgroundColor: course.color,
             }}

@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "../assets/6.png";
+import image1 from "../assets/THẺ 4 - HSK.png";
 
 const benefits = [
   "Ôn lại bài theo đúng lộ trình",
@@ -86,7 +86,7 @@ export default function OnlineLearningSection() {
           </div>
 
           {/* THẺ TIẾN ĐỘ */}
-          <div
+          {/* <div
             className="
               absolute
               -bottom-5
@@ -144,7 +144,7 @@ export default function OnlineLearningSection() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* THẺ TRANG TRÍ */}
           <div
@@ -187,9 +187,9 @@ export default function OnlineLearningSection() {
               text-center
             "
           >
-            APP ƯƠM MẦM {" "}
+            App Ươm Mầm {" "} 
             <span className=" text-[#74070E]">
-              GIỮ NHỊP HỌC GIỮA HAI BUỔI
+             Giữ Nhịp Học Giữa Hai Buổi
             </span>
           </h2>
 

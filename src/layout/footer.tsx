@@ -1,26 +1,26 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import { SiZalo } from "react-icons/si";
 
 const brandInfo = {
   company: "TIẾNG TRUNG ƯƠM MẦM HSK",
-  phone: "0123 456 789",
-  phoneLink: "0123456789",
-  zaloLink: "https://zalo.me/0123456789",
-  email: "hello@uommanhhsk.vn",
+  phone: "032 888 4696",
+  phoneLink: "0328884696",
+  zaloLink: "https://zalo.me/0328884696",
 };
 
 const courses = [
   {
-    name: "LỚP TỪ SỐ 0",
-    href: "#tu-so-0",
+    name: "Ươm Mầm từ 0 đến HSK2",
+    href: "#khoa-hoc",
   },
   {
-    name: "LỚP HSK 3",
-    href: "#hsk-3",
+    name: "Đâm Chồi HSK3",
+    href: "#khoa-hoc",
   },
   {
     name: "LỚP HSK 4",
-    href: "#hsk-4",
+    href: "#khoa-hoc",
   },
 ];
 
@@ -99,30 +99,7 @@ const TikTokIcon = () => (
 );
 
 const ZaloIcon = () => (
-  <svg
-    viewBox="0 0 32 32"
-    fill="none"
-    className="h-[23px] w-[23px]"
-    aria-hidden="true"
-  >
-    <path
-      d="M7.2 5.5h17.6A3.7 3.7 0 0 1 28.5 9.2v11.6a3.7 3.7 0 0 1-3.7 3.7H14.2l-5.9 3.8.9-3.8h-2A3.7 3.7 0 0 1 3.5 20.8V9.2a3.7 3.7 0 0 1 3.7-3.7Z"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinejoin="round"
-    />
-    <text
-      x="16"
-      y="18.7"
-      fill="currentColor"
-      fontSize="8.2"
-      fontWeight="800"
-      textAnchor="middle"
-      fontFamily="Arial, sans-serif"
-    >
-      Zalo
-    </text>
-  </svg>
+ <SiZalo />
 );
 
 const ArrowUpIcon = () => (
@@ -261,20 +238,7 @@ export default function Footer() {
               {brandInfo.phone}
             </a>
 
-            <a
-              href={`mailto:${brandInfo.email}`}
-              className="
-                flex
-                w-fit
-                items-center
-                gap-[10px]
-                transition-colors
-                hover:text-[#FEE997]
-              "
-            >
-              <MailIcon />
-              {brandInfo.email}
-            </a>
+       
           </div>
         </div>
 
@@ -375,6 +339,7 @@ export default function Footer() {
               space-y-[14px]
               text-[13px]
               font-semibold
+              uppercase
             "
           >
             {courses.map((course, index) => (
@@ -445,6 +410,7 @@ export default function Footer() {
                 flex
                 h-[40px]
                 w-[40px]
+                text-xl
                 items-center
                 justify-center
                 rounded-full
@@ -505,7 +471,8 @@ export default function Footer() {
         }
         className="
           fixed
-          bottom-4
+          bottom-[100px]
+          sm:bottom-4
           right-4
           z-50
 

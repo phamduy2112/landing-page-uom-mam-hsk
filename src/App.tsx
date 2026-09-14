@@ -32,9 +32,8 @@ function App() {
     <FAQSection/>
     <BenefitsForm/>
        <MobileContactBar
-        phone="0901234567"
-        zaloUrl="https://zalo.me/0901234567"
-        messengerUrl="https://m.me/uommamhsk"
+        phone="0328884696"
+        zaloUrl="https://zalo.me/0328884696"
       />
     <Footer />
    </div>
