@@ -245,7 +245,7 @@ export default function GuaranteeSection() {
                 </div>
 
                 <div>
-                  <p className="font-semibold leading-[1.5] text-[#37076D]">
+                  <p className="font-semibold leading-[1.5] text-[#37076D] capitalize">
                   Cam kết hoàn học Phí 100%
                   </p>
 
@@ -262,7 +262,7 @@ export default function GuaranteeSection() {
                 </div>
 
                 <div>
-                  <p className="font-semibold leading-[1.5] text-[#37076D]">
+                  <p className="font-semibold leading-[1.5] text-[#37076D] capitalize">
                     Hoàn học phí nếu không đạt đầu ra cam kết
                   </p>
 
