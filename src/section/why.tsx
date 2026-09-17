@@ -534,14 +534,14 @@ export default function WhySection() {
             SECTION TITLE
         ================================================= */}
 
-        <div className="mx-auto mb-7 px-5 text-center md:mb-8 md:px-0">
+        <div className="mx-auto mb-3 px-5 text-center md:mb-4 md:px-0">
          
 
           <h2 className="mt-4 text-[28px] font-bold leading-[1.25] tracking-[-0.6px] text-[#37076D] sm:text-[32px] md:text-[38px] lg:text-[42px]">
             Vì Sao Chọn <span className="text-[#74070E]">Ươm Mầm HSK?</span>
           </h2>
 
-          <p className="mx-auto mt-3  text-[15px] leading-[1.65] text-[#685D6C] md:text-[16px]">
+          <p className="mx-auto mt-1  text-[15px] leading-[1.65] text-[#685D6C] md:text-[16px]">
             Không chỉ học để biết, bạn được đồng hành theo một lộ trình rõ ràng và có kết quả cụ thể.
           </p>
         </div>
