@@ -42,3 +42,20 @@ body {
 
   font-family: "Montserrat", sans-serif;
 }
+
+@keyframes zalo-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.18);
+  }
+
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 8px 22px rgba(254, 233, 151, 0.5);
+  }
+}
+
+.animate-zalo-pulse {
+  animation: zalo-pulse 1.5s ease-in-out infinite;
+}

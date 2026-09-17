@@ -20,7 +20,6 @@ function App() {
     <Hero/>
     
     <WhySection/>
-    <HSKRoadmapSection/>
     <CoursesSection/>
     <GuaranteeSection/>
         <OnlineLearningSection/>

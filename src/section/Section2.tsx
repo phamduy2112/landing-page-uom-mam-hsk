@@ -239,36 +239,34 @@ export default function GuaranteeSection() {
             {/* GUARANTEE ITEMS */}
 
             <div className="mt-4 max-w-[600px] space-y-3">
-              <div className="flex items-start gap-3 rounded-2xl border border-[#E4D8C7] bg-white/80 p-4 transition duration-300 hover:border-[#B0A5DF] hover:shadow-[0_12px_30px_rgba(55,7,109,0.07)]">
+              <div className="flex items-center gap-3 rounded-2xl border border-[#E4D8C7] bg-white/80 p-4 transition duration-300 hover:border-[#B0A5DF] hover:shadow-[0_12px_30px_rgba(55,7,109,0.07)]">
                 <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#E9EFD8] text-[#686F1F]">
                   <CheckIcon />
                 </div>
 
                 <div>
-                  <p className="font-semibold leading-[1.5] text-[#37076D] capitalize">
-                  Cam kết hoàn học Phí 100%
+                  <p className="font-semibold leading-[1.5] text-sm text-[#37076D] capitalize">
+                  Hoàn 100% học phí nếu không đạt kết quả 
                   </p>
 
-                  <p className="mt-1 text-[14px] leading-[1.55] text-[#756B78]">
-                    Áp dụng theo chính sách lớp học
+                  {/* <p className="mt-1 text-[14px] leading-[1.55] text-[#756B78]">
+                    Nếu không đạt kết quả 
 
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 rounded-2xl border border-[#E4D8C7] bg-white/80 p-4 transition duration-300 hover:border-[#B0A5DF] hover:shadow-[0_12px_30px_rgba(55,7,109,0.07)]">
+              <div className="flex items-center gap-3 rounded-2xl border border-[#E4D8C7] bg-white/80 p-4 transition duration-300 hover:border-[#B0A5DF] hover:shadow-[0_12px_30px_rgba(55,7,109,0.07)]">
                 <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#E9EFD8] text-[#686F1F]">
                   <CheckIcon />
                 </div>
 
                 <div>
-                  <p className="font-semibold leading-[1.5] text-[#37076D] capitalize">
-                    Hoàn học phí nếu không đạt đầu ra cam kết
+                  <p className="font-semibold leading-[1.5] text-sm text-[#37076D] capitalize">
+                    Được đồng hành sát sao từng chặng học tập, sửa lỗi phát âm liên tụ
                   </p>
 
-                  <p className="mt-1 text-[14px] leading-[1.55] text-[#756B78]">
-                    Cuối khóa không đạt kết quả như cam kết 100% (dựa trên kết quả đề thi thật)
-                  </p>
+              
                 </div>
               </div>
             </div>

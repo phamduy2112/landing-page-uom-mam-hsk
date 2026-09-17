@@ -339,7 +339,7 @@ export default function CoursesSection() {
         relative
         w-full
         overflow-hidden
-        bg-[#FFF9EF]
+        bg-[#F4E5CB]
         py-8
 
         md:py-16

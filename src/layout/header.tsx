@@ -4,6 +4,11 @@ import { useState } from "react";
 import Button from "../ui/button";
 import logo from "../assets/logo.png";
 
+/* Thay số Zalo tại đây nếu cần */
+const ZALO_PHONE = "0909383358";
+const ZALO_PHONE_DISPLAY = "0909 383 358";
+const ZALO_URL = `https://zalo.me/${ZALO_PHONE}`;
+
 const navItems = [
   {
     label: "LỘ TRÌNH HỌC",
@@ -79,6 +84,31 @@ const ArrowIcon = () => (
   </svg>
 );
 
+const ZaloIcon = () => (
+  <svg
+    viewBox="0 0 40 40"
+    className="h-6 w-6 shrink-0"
+    aria-hidden="true"
+  >
+    <circle cx="20" cy="20" r="20" fill="#0068FF" />
+    <path
+      d="M10.5 11.5h19a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H19l-5.5 3.5 1-3.5h-4a3 3 0 0 1-3-3v-10a3 3 0 0 1 3-3Z"
+      fill="white"
+    />
+    <text
+      x="20"
+      y="22.8"
+      fill="#0068FF"
+      fontSize="8.5"
+      fontWeight="800"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+    >
+      Zalo
+    </text>
+  </svg>
+);
+
 /* =========================
    HEADER
 ========================= */
@@ -99,7 +129,6 @@ export default function Header() {
           z-50
           w-full
 
-          border-t-[3px]
           border-[#686F1F]
           border-b
           border-[#E7DAC6]
@@ -111,6 +140,84 @@ export default function Header() {
           shadow-[0_4px_18px_rgba(55,7,109,0.04)]
         "
       >
+        {/* =========================
+            ZALO CONTACT BAR
+        ========================= */}
+        <div className="bg-[#37076D] text-white">
+          <div
+            className="
+              mx-auto
+              flex
+              min-h-[42px]
+              max-w-[1280px]
+              items-center
+              justify-center
+              gap-2
+              px-3
+              py-1.5
+
+              md:min-h-[46px]
+              md:gap-3
+              md:px-8
+            "
+          >
+            <span
+              className="
+                relative
+                flex
+                h-2.5
+                w-2.5
+                shrink-0
+              "
+              aria-hidden="true"
+            >
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#FEE997] opacity-70" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#FEE997]" />
+            </span>
+
+            <p className="text-[11px] font-medium leading-tight md:text-[13px]">
+              <span className="hidden sm:inline">
+                Ưu tiên liên hệ Zalo để được tư vấn ngay
+              </span>
+              <span className="sm:hidden">Tư vấn nhanh qua Zalo</span>
+            </p>
+
+          <a
+  href={ZALO_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`Liên hệ Zalo ${ZALO_PHONE_DISPLAY}`}
+  className="
+    animate-zalo-pulse
+    ml-1
+    inline-flex
+    min-h-[32px]
+    shrink-0
+    items-center
+    gap-1.5
+    rounded-full
+    bg-[#FEE997]
+    px-2.5
+    text-[12px]
+    font-bold
+    text-[#37076D]
+    transition-colors
+    duration-200
+    hover:bg-white
+
+    md:min-h-[36px]
+    md:gap-2
+    md:px-4
+    md:text-[14px]
+  "
+>
+  <ZaloIcon />
+  <span>{ZALO_PHONE_DISPLAY}</span>
+  <span className="hidden lg:inline">• TƯ VẤN NGAY</span>
+</a>
+          </div>
+        </div>
+
         <div
           className="
             mx-auto

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef, useState } from "react";
 
 /* =========================================================
@@ -6,34 +8,24 @@ import React, { useRef, useState } from "react";
 
 const items = [
   {
-    title: "Lộ Trình Rõ Từ Nền Tảng",
-    desc: "Học đúng thứ tự từ Pinyin, phát âm đến từ vựng, ngữ pháp và phản xạ.",
+    title: "Lộ Trình Rõ Ràng",
+    desc: "Học đúng trình độ, đúng thứ tự và được giáo viên sửa lỗi trực tiếp trong từng buổi học.",
     icon: "route",
   },
   {
-    title: "Giáo Viên Sửa Lỗi Trực Tiếp",
-    desc: "Không chỉ chỉ ra lỗi mà còn theo sát để học viên sửa đúng.",
-    icon: "level",
-  },
-  {
-    title: "APP Đồng Hành Giữa Hai Buổi",
-    desc: "Ôn bài, luyện phát âm, Pinyin, chữ Hán và theo dõi tiến độ.",
+    title: "APP Hỗ Trợ Học Tiếng Trung",
+    desc: "Ôn bài, luyện phát âm, học từ vựng và giữ nhịp giữa hai buổi học.",
     icon: "clipboard",
   },
   {
-    title: "Mục Tiêu Từng Chặng Rõ Ràng",
-    desc: "Biết mình đang ở đâu và cần đạt gì ở bước tiếp theo.",
-    icon: "deadline",
-  },
-  {
-    title: "Video Xem Lại & Học Liệu Hỗ Trợ",
-    desc: "Tiếp tục ôn luyện sau buổi học, hạn chế đứt nhịp giữa các buổi.",
-    icon: "book",
-  },
-  {
-    title: "Học Theo Đúng Mục Tiêu Của Bạn",
-    desc: "Xác định học để thi HSK, du học, đi làm hay giao tiếp trước khi tư vấn lộ trình phù hợp.",
+    title: "Cam Kết Đầu Ra",
+    desc: "Hoàn 100% học phí nếu không đạt kết quả theo cam kết của khóa học.",
     icon: "target",
+  },
+  {
+    title: "Học Thử Với Chi Phí Nhỏ",
+    desc: "Trải nghiệm lớp học và phương pháp trước khi chọn lộ trình phù hợp.",
+    icon: "book",
   },
 ];
 
@@ -76,106 +68,6 @@ const ClipboardIcon = () => (
 
     <path
       d="M54 27v25M51 32h6M51 52h6"
-      stroke="#37076D"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-const LevelIcon = () => (
-  <svg
-    viewBox="0 0 80 80"
-    fill="none"
-    className="
-      h-[64px]
-      w-[64px]
-      md:h-[72px]
-      md:w-[72px]
-    "
-  >
-    <circle cx="31" cy="40" r="19" fill="#B0A5DF" />
-
-    <rect
-      x="27"
-      y="18"
-      width="32"
-      height="18"
-      rx="1"
-      fill="#FFF9EF"
-      stroke="#37076D"
-      strokeWidth="2.5"
-    />
-
-    <path
-      d="M33 24h18M33 29h11"
-      stroke="#37076D"
-      strokeWidth="2.5"
-    />
-
-    <circle
-      cx="31"
-      cy="40"
-      r="8"
-      stroke="#37076D"
-      strokeWidth="2.5"
-    />
-
-    <circle
-      cx="51"
-      cy="40"
-      r="8"
-      stroke="#37076D"
-      strokeWidth="2.5"
-    />
-
-    <circle
-      cx="65"
-      cy="40"
-      r="8"
-      stroke="#37076D"
-      strokeWidth="2.5"
-    />
-
-    <path
-      d="M21 58v-7c0-6 5-10 10-10s10 4 10 10v7M41 58v-6c0-5 4-9 10-9s10 4 10 9v6M57 58v-5c0-4 3-8 8-8s8 4 8 8v5"
-      stroke="#37076D"
-      strokeWidth="2.5"
-    />
-  </svg>
-);
-
-const DeadlineIcon = () => (
-  <svg
-    viewBox="0 0 80 80"
-    fill="none"
-    className="
-      h-[64px]
-      w-[64px]
-      md:h-[72px]
-      md:w-[72px]
-    "
-  >
-    <circle cx="55" cy="42" r="19" fill="#FEE997" />
-
-    <circle
-      cx="43"
-      cy="27"
-      r="17"
-      fill="#FFF9EF"
-      stroke="#37076D"
-      strokeWidth="2.5"
-    />
-
-    <path
-      d="M43 15v13l8 5M43 6v6M27 27h-7M59 27h7"
-      stroke="#74070E"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-    />
-
-    <path
-      d="M25 48c-5 1-8 5-8 10v8M30 43c-5 0-9 4-9 9M54 48c5 1 8 5 8 10v8"
       stroke="#37076D"
       strokeWidth="2.5"
       strokeLinecap="round"
@@ -359,34 +251,10 @@ const NextIcon = () => (
 
 const Icon = ({ type }: { type: string }) => {
   if (type === "clipboard") return <ClipboardIcon />;
-  if (type === "level") return <LevelIcon />;
-  if (type === "deadline") return <DeadlineIcon />;
   if (type === "route") return <RouteIcon />;
   if (type === "target") return <TargetIcon />;
 
   return <BookIcon />;
-};
-
-/* =========================================================
-   MOBILE TITLE SIZE
-
-   Dưới 30 ký tự   : 20px
-   30 - 44 ký tự   : 18px
-   Trên 44 ký tự   : 17px
-========================================================= */
-
-const getMobileTitleSize = (title: string) => {
-  const length = title.trim().length;
-
-  if (length <= 30) {
-    return "text-[17px]";
-  }
-
-  if (length <= 44) {
-    return "text-[18px]";
-  }
-
-  return "text-[17px]";
 };
 
 /* =========================================================
@@ -411,33 +279,38 @@ const Card = ({ item, mobile = false }: CardProps) => {
         flex
         flex-col
         items-center
-        justify-center
-        bg-[#FFF9EF]
+        justify-start
+        overflow-hidden
+        rounded-[24px]
+        border
+        border-[#E8DCCB]
+        bg-white
         text-center
         transition-all
         duration-300
-
-        hover:bg-[#F4E5CB]/50
-
+        hover:-translate-y-1
+        hover:border-[#B0A5DF]
+        hover:shadow-[0_18px_45px_rgba(55,7,109,0.10)]
+min-h-[250px]
         ${
           mobile
             ? `
-              min-h-[300px]
+           
               w-full
               shrink-0
               snap-center
 
-              rounded-[18px]
-              border
-              border-[#E1D6C5]
-
+              px-5
+              py-7
+            `
+              : `
+              h-full
+              
               px-5
               py-6
-            `
-            : `
-              min-h-[280px]
-              px-8
-              py-7
+             
+              xl:px-4
+              xl:py-6
             `
         }
       `}
@@ -455,8 +328,8 @@ const Card = ({ item, mobile = false }: CardProps) => {
 
           ${
             mobile
-              ? "mb-3 h-[68px]"
-              : "mb-4 h-[78px]"
+              ? "mb-4 h-[68px]"
+              : "mb-4 h-[68px]"
           }
         `}
       >
@@ -469,11 +342,10 @@ const Card = ({ item, mobile = false }: CardProps) => {
         className={`
           font-bold
           text-[#37076D]
-
+          text-[17px]
           ${
             mobile
               ? `
-                ${getMobileTitleSize(item.title)}
                 max-w-[310px]
                 leading-[1.35]
                 tracking-[-0.25px]
@@ -481,6 +353,9 @@ const Card = ({ item, mobile = false }: CardProps) => {
               : `
                 text-[17px]
                 leading-[1.45]
+                xl:whitespace-nowrap
+                xl:text-[16px]
+                2xl:text-[17px]
               `
           }
         `}
@@ -494,19 +369,18 @@ const Card = ({ item, mobile = false }: CardProps) => {
         className={`
           mx-auto
           text-[#5F5365]
+          text-[13px]
 
           ${
             mobile
               ? `
-                mt-2.5
+                mt-3
                 max-w-[320px]
-                text-[14px]
-                leading-[1.55]
+                leading-[1.6]
               `
               : `
                 mt-3
-                max-w-[350px]
-                text-[15px]
+                max-w-[320px]
                 leading-[1.65]
               `
           }
@@ -534,7 +408,7 @@ const Card = ({ item, mobile = false }: CardProps) => {
           ${
             mobile
               ? `
-                mt-4
+                mt-5
                 text-[14px]
               `
               : `
@@ -544,7 +418,7 @@ const Card = ({ item, mobile = false }: CardProps) => {
           }
         `}
       >
-        Tìm Hiểu Lộ Trình
+        Nhận Tư Vấn Lộ Trình
         <ArrowIcon />
       </a>
     </article>
@@ -646,7 +520,7 @@ export default function WhySection() {
       <div
         className="
           mx-auto
-          max-w-[1270px]
+          max-w-[1320px]
 
           py-8
 
@@ -660,36 +534,17 @@ export default function WhySection() {
             SECTION TITLE
         ================================================= */}
 
-       <h2
-  className="
-    mx-auto
-    mb-6
-    max-w-[370px]
-    px-5
-    text-center
-    text-[26px]
-    font-bold
-    leading-[1.25]
-    tracking-[-0.6px]
-    text-[#37076D]
+        <div className="mx-auto mb-7 px-5 text-center md:mb-8 md:px-0">
+         
 
-    sm:max-w-[520px]
-    sm:text-[28px]
+          <h2 className="mt-4 text-[28px] font-bold leading-[1.25] tracking-[-0.6px] text-[#37076D] sm:text-[32px] md:text-[38px] lg:text-[42px]">
+            Vì Sao Chọn <span className="text-[#74070E]">Ươm Mầm HSK?</span>
+          </h2>
 
-    md:mb-10
-    md:max-w-none
-    md:px-0
-    md:text-[32px]
-    md:leading-[1.3]
-
-    lg:text-[40px]
-  "
->
-  Vì Sao Học Viên Chọn{" "}
-  <span className="text-[#74070E]">
-    Ươm Mầm HSK?
-  </span>
-</h2>
+          <p className="mx-auto mt-3  text-[15px] leading-[1.65] text-[#685D6C] md:text-[16px]">
+            Không chỉ học để biết, bạn được đồng hành theo một lộ trình rõ ràng và có kết quả cụ thể.
+          </p>
+        </div>
         {/* =================================================
             MOBILE
             < 768PX
@@ -846,17 +701,21 @@ export default function WhySection() {
 
             md:grid
             md:grid-cols-2
-            md:gap-[1px]
-            md:bg-[#D8CBB7]
+            md:gap-5
 
-            lg:grid-cols-3
+            xl:grid-cols-4
+            xl:gap-4
+
+            2xl:gap-6
           "
         >
-          {items.map((item, index) => (
-            <Card
-              key={index}
-              item={item}
-            />
+          {items.map((item) => (
+            <div
+              key={item.title}
+              className="h-full min-w-0"
+            >
+              <Card item={item} />
+            </div>
           ))}
         </div>
 
