@@ -41,6 +41,7 @@ export default function OnlineLearningSection() {
         md:py-20
         lg:py-[82px]
       "
+      id="he-thong-hoc"
     >
       <div
         className="

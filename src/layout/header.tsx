@@ -10,13 +10,14 @@ const ZALO_PHONE_DISPLAY = "032 888 4696";
 const ZALO_URL = `https://zalo.me/${ZALO_PHONE}`;
 
 const navItems = [
-  {
-    label: "LỘ TRÌNH HỌC",
-    href: "#lo-trinh",
-  },
+  
   {
     label: "KHÓA HỌC",
     href: "#khoa-hoc",
+  },
+  {
+    label: "CAM KẾT",
+    href: "#cam-ket",
   },
     {
     label: "HỆ THỐNG HỌC",
