@@ -251,7 +251,8 @@ export default function Header() {
               alt="Tiếng Trung Ươm Mầm HSK"
               className="
                 h-auto
-                w-[80px]
+                sm:w-[80px]
+                w-[60px]
                 object-contain
 
             
