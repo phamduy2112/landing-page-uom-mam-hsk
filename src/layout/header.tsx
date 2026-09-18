@@ -87,7 +87,7 @@ const ArrowIcon = () => (
 const ZaloIcon = () => (
   <svg
     viewBox="0 0 40 40"
-    className="h-8 w-8 shrink-0"
+    className="sm:h-8 sm:w-8 shrink-0"
     aria-hidden="true"
   >
     <circle cx="20" cy="20" r="20" fill="#0068FF" />

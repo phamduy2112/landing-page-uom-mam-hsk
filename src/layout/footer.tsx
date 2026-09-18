@@ -4,9 +4,9 @@ import { SiZalo } from "react-icons/si";
 
 const brandInfo = {
   company: "TIẾNG TRUNG ƯƠM MẦM HSK",
-  phone: "032 888 4696",
-  phoneLink: "0328884696",
-  zaloLink: "https://zalo.me/0328884696",
+  phone: "090 938 3358",
+  phoneLink: "0909383358",
+  zaloLink: "https://zalo.me/0909383358",
 };
 
 const courses = [
