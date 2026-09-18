@@ -5,8 +5,8 @@ import Button from "../ui/button";
 import logo from "../assets/logo.png";
 
 /* Thay số Zalo tại đây nếu cần */
-const ZALO_PHONE = "0909383358";
-const ZALO_PHONE_DISPLAY = "0909 383 358";
+const ZALO_PHONE = "0328884696";
+const ZALO_PHONE_DISPLAY = "032 888 4696";
 const ZALO_URL = `https://zalo.me/${ZALO_PHONE}`;
 
 const navItems = [
