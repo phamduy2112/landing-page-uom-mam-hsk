@@ -23,7 +23,7 @@ const items = [
     icon: "target",
   },
   {
-    title: "Học Thử Với Chi Phí Nhỏ",
+    title: "Học Thử Với Khoản Phí Nhỏ",
     desc: "Trải nghiệm lớp học và phương pháp trước khi chọn lộ trình phù hợp.",
     icon: "book",
   },

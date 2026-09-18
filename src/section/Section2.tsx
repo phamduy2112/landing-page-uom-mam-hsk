@@ -263,7 +263,7 @@ export default function GuaranteeSection() {
 
                 <div>
                   <p className="font-semibold leading-[1.5] text-sm text-[#37076D] capitalize">
-                    Được đồng hành sát sao từng chặng học tập, sửa lỗi phát âm liên tụ
+                    Được đồng hành sát sao từng chặng học tập, sửa lỗi phát âm liên tục
                   </p>
 
               
