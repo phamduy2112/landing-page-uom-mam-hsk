@@ -157,7 +157,7 @@ export default function Header() {
               px-3
               py-1.5
 
-              md:min-h-[46px]
+              md:min-h-[56px]
               md:gap-3
               md:px-8
             "
@@ -176,7 +176,7 @@ export default function Header() {
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#FEE997]" />
             </span>
 
-            <p className="text-[11px] font-medium leading-tight md:text-[13px]">
+            <p className="text-[11px] font-bold leading-tight md:text-[14px]">
               <span className="hidden sm:inline">
                 Ưu tiên liên hệ Zalo để được tư vấn ngay
               </span>
@@ -192,7 +192,7 @@ export default function Header() {
     animate-zalo-pulse
     ml-1
     inline-flex
-    min-h-[32px]
+    min-h-[35px]
     shrink-0
     items-center
     gap-1.5
@@ -206,10 +206,10 @@ export default function Header() {
     duration-200
     hover:bg-white
 
-    md:min-h-[36px]
+    md:min-h-[45px]
     md:gap-2
     md:px-4
-    md:text-[14px]
+    md:text-[16px]
   "
 >
   <ZaloIcon />

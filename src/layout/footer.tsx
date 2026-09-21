@@ -19,7 +19,7 @@ const courses = [
     href: "#khoa-hoc",
   },
   {
-    name: "LỚP HSK 4",
+    name: "Vươn Lá HSK4",
     href: "#khoa-hoc",
   },
 ];

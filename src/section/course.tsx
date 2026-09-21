@@ -56,7 +56,7 @@ const courses = [
   {
     id: "hsk-4",
     level: "NÂNG CAO",
-    name: "Lớp HSK 4",
+    name: "Vươn Lá HSK4",
     color: "#74070E",
     border: "#E8D0D1",
     softBg: "#FAF2F2",
