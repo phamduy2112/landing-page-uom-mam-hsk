@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 /* =========================================================
    DATA
@@ -184,24 +184,49 @@ const BenefitIcon = ({ type }: { type: string }) => {
 ========================================================= */
 
 export default function BenefitsForm() {
-  const handleSubmit = (
-    e: React.FormEvent<HTMLFormElement>
-  ) => {
-    e.preventDefault();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+const [submitStatus, setSubmitStatus] = useState<
+  "success" | "error" | null
+>(null);
+const handleSubmit = async (
+  e: React.FormEvent<HTMLFormElement>
+) => {
+  e.preventDefault();
 
-    const formData = new FormData(e.currentTarget);
+  const form = e.currentTarget;
+  const formData = new FormData(form);
 
-    const data = {
-      name: formData.get("name"),
-      phone: formData.get("phone"),
-      level: formData.get("level"),
-      target: formData.get("target"),
-    };
-
-    console.log("Form data:", data);
-
-    // Gọi API của bạn tại đây
+  const data = {
+    name: formData.get("name"),
+    phone: formData.get("phone"),
+    level: formData.get("level"),
+    target: formData.get("target"),
   };
+
+  setIsSubmitting(true);
+  setSubmitStatus(null);
+
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbx9RdfQFC5mHw9A_0nIuRym3V16qSQUtDy5-guraK437PH34gNAA87VVTrFHaBpBEDqLA/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify(data),
+      }
+    );
+
+    form.reset();
+    setSubmitStatus("success");
+  } catch {
+    setSubmitStatus("error");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <section
@@ -804,11 +829,21 @@ export default function BenefitsForm() {
                   hover:shadow-[0_14px_28px_rgba(55,7,109,0.22)]
                 "
               >
-                NHẬN TƯ VẤN LỘ TRÌNH
+                {isSubmitting ? "ĐANG GỬI..." : "NHẬN TƯ VẤN LỘ TRÌNH"}
 
                 <ArrowIcon />
               </button>
+{submitStatus === "success" && (
+  <p className="rounded-lg bg-green-50 px-3 py-2 text-center text-[12px] font-medium text-green-700">
+    Đăng ký thành công! Ươm Mầm HSK sẽ liên hệ bạn sớm.
+  </p>
+)}
 
+{submitStatus === "error" && (
+  <p className="rounded-lg bg-red-50 px-3 py-2 text-center text-[12px] font-medium text-red-600">
+    Gửi thông tin chưa thành công. Vui lòng thử lại.
+  </p>
+)}
               {/* =================================================
                   PRIVACY
               ================================================= */}

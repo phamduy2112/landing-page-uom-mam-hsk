@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
-import image1 from "../assets/IMG_8324.jpeg";
-import image2 from "../assets/IMG_5913.jpeg";
-import image3 from "../assets/IMG_5914.jpeg";
-import image4 from "../assets/IMG_8318.jpeg";
-import image5 from "../assets/IMG_8323.jpeg";
+import image1 from "../assets/BÀI 12 - HSK (4).png";
+import image2 from "../assets/BÀI 12 - HSK (1).png";
+import image3 from "../assets/BÀI 12 - HSK (2).png";
+import image4 from "../assets/BÀI 12 - HSK (5).png";
+import image5 from "../assets/BÀI 12 - HSK (3).png";
+
 
 const images = [
     image1,

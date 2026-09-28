@@ -142,13 +142,14 @@ py-8       md:py-16
               md:rounded-[22px]
             "
           >
-            <iframe
-              className="absolute inset-0 h-full w-full"
-              src="https://www.youtube.com/embed/VIDEO_ID"
-              title="Lớp học trực tuyến Ươm Mầm HSK"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            {/* https://drive.google.com/file/d/1qhj6zvA8DDkidxzVytYBNK9cPFWMrWq7/view?usp=drive_link */}
+           <iframe
+  className="absolute inset-0 h-full w-full"
+  src="https://drive.google.com/file/d/1qhj6zvA8DDkidxzVytYBNK9cPFWMrWq7/preview"
+  title="Lớp học trực tuyến Ươm Mầm HSK"
+  allow="autoplay"
+  allowFullScreen
+/>
 
             {/* BADGE */}
             <div
@@ -212,7 +213,7 @@ py-8       md:py-16
           </p>
 
           <a
-            href="#video-uom-mam-hsk"
+            href="https://drive.google.com/drive/folders/1D5lc-j87O2KFV6hU-p59oZGxyKCbx_VS"
             className="
               mt-3
               inline-flex
